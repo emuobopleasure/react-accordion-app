@@ -12,7 +12,7 @@ const Question = ({item}) => {
   return (
     <section className='border border-gray-400 py-4 rounded-sm shadow-gray-400 shadow-sm'>
         <div className='wrapper flex justify-between items-center mx-6'>
-            <div className='question text-[0.9rem] font-medium'>
+            <div className='question text-[1rem] font-medium'>
               {item.title}
             </div>
             <button 
@@ -22,7 +22,7 @@ const Question = ({item}) => {
               <FiPlus/>}
             </button>
         </div>
-        <div className='answer mx-6 text-[0.75rem]'>
+        <div className='answer mx-6 text-[0.9rem] text-gray-600'>
               {showInfo && item.info}
         </div>
     </section>
