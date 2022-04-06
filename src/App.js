@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Question from "./components/Question";
-import Questions from "./components/Question";
 import { data } from "./data";
 
 function App() {
@@ -21,6 +20,7 @@ function App() {
               return <Question
                         key={item.id}
                         item={item}
+                        setInfoData={setInfoData}
                       />
             })
           }
